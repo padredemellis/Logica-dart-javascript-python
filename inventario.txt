@@ -1,0 +1,18 @@
+void main() {
+  // TODO: Crea un mapa con productos y sus precios
+    'manzana': 1.5,
+    'pan': 2.0,
+    'leche': 3.5
+  
+  // TODO: Agrega un nuevo producto 'huevos' con precio 4.0
+  
+  // TODO: Actualiza el precio de 'pan' a 2.5
+  
+  // TODO: Verifica si existe 'café' en el inventario
+  
+  // TODO: Elimina 'manzana' del inventario
+  
+  // TODO: Imprime todos los productos y sus precios
+  
+  // TODO: Calcula el precio total de todos los productos
+}
