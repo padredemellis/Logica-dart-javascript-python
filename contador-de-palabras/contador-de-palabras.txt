@@ -1,0 +1,46 @@
+### Ejercicio 2: Contador de Palabras
+**Objetivo:** Contar frecuencia de palabras en un texto
+
+#### Dart
+```dart
+void main() {
+  String texto = "hola mundo hola dart mundo mundo";
+  
+  // TODO:  Divide el texto en palabras
+  
+  // TODO: Crea un mapa para contar la frecuencia de cada palabra
+  // Resultado esperado: {'hola': 2, 'mundo': 3, 'dart': 1}
+  
+  // TODO:  Encuentra la palabra más frecuente
+  
+  // TODO: Imprime palabras que aparecen más de 1 vez
+}
+```
+
+#### JavaScript
+```javascript
+const texto = "hola mundo hola javascript mundo mundo";
+
+// TODO:  Divide el texto en palabras usando split()
+
+// TODO: Crea un objeto para contar la frecuencia de cada palabra
+// Usa un bucle for... of o reduce()
+
+// TODO: Encuentra la palabra más frecuente
+
+// TODO: Filtra y muestra palabras que aparecen más de 1 vez
+```
+
+#### Python
+```python
+texto = "hola mundo hola python mundo mundo"
+
+# TODO: Divide el texto en palabras usando split()
+
+# TODO: Crea un diccionario para contar la frecuencia
+# Puedes usar un bucle o collections.Counter
+
+# TODO: Encuentra la palabra más frecuente usando max()
+
+# TODO: Usa comprensión de diccionarios para filtrar palabras con frecuencia > 1
+```
