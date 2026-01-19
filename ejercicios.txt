@@ -1,0 +1,627 @@
+# 📚 Ejercicios de Mapas/Objetos/Diccionarios, Strings y Listas
+## Dart, JavaScript y Python
+
+---
+
+## 📚 PARTE 1: Mapas/Objetos/Diccionarios
+
+### Ejercicio 1: Inventario de Tienda
+**Objetivo:** Crear, actualizar y consultar un inventario
+
+#### Dart
+```dart
+void main() {
+  // TODO: Crea un mapa con productos y sus precios
+  Map<String, double> inventario = {
+    'manzana': 1.5,
+    'pan': 2.0,
+    'leche': 3.5
+  };
+  
+  // TODO: Agrega un nuevo producto 'huevos' con precio 4.0
+  
+  // TODO: Actualiza el precio de 'pan' a 2.5
+  
+  // TODO:  Verifica si existe 'café' en el inventario
+  
+  // TODO: Elimina 'manzana' del inventario
+  
+  // TODO:  Imprime todos los productos y sus precios
+  
+  // TODO: Calcula el precio total de todos los productos
+}
+```
+
+#### JavaScript
+```javascript
+// TODO: Crea un objeto con productos y sus precios
+const inventario = {
+  manzana: 1.5,
+  pan: 2.0,
+  leche: 3.5
+};
+
+// TODO:  Agrega un nuevo producto 'huevos' con precio 4.0
+
+// TODO: Actualiza el precio de 'pan' a 2.5
+
+// TODO: Verifica si existe 'café' en el inventario
+
+// TODO:  Elimina 'manzana' del inventario
+
+// TODO:  Imprime todos los productos y sus precios usando Object.entries()
+
+// TODO: Calcula el precio total usando Object.values()
+```
+
+#### Python
+```python
+# TODO: Crea un diccionario con productos y sus precios
+inventario = {
+    'manzana': 1.5,
+    'pan': 2.0,
+    'leche': 3.5
+}
+
+# TODO: Agrega un nuevo producto 'huevos' con precio 4.0
+
+# TODO: Actualiza el precio de 'pan' a 2.5
+
+# TODO: Verifica si existe 'café' en el inventario
+
+# TODO: Elimina 'manzana' del inventario usando pop()
+
+# TODO: Imprime todos los productos y sus precios usando items()
+
+# TODO: Calcula el precio total usando sum() y values()
+```
+
+---
+
+### Ejercicio 2: Contador de Palabras
+**Objetivo:** Contar frecuencia de palabras en un texto
+
+#### Dart
+```dart
+void main() {
+  String texto = "hola mundo hola dart mundo mundo";
+  
+  // TODO:  Divide el texto en palabras
+  
+  // TODO: Crea un mapa para contar la frecuencia de cada palabra
+  // Resultado esperado: {'hola': 2, 'mundo': 3, 'dart': 1}
+  
+  // TODO:  Encuentra la palabra más frecuente
+  
+  // TODO: Imprime palabras que aparecen más de 1 vez
+}
+```
+
+#### JavaScript
+```javascript
+const texto = "hola mundo hola javascript mundo mundo";
+
+// TODO:  Divide el texto en palabras usando split()
+
+// TODO: Crea un objeto para contar la frecuencia de cada palabra
+// Usa un bucle for... of o reduce()
+
+// TODO: Encuentra la palabra más frecuente
+
+// TODO: Filtra y muestra palabras que aparecen más de 1 vez
+```
+
+#### Python
+```python
+texto = "hola mundo hola python mundo mundo"
+
+# TODO: Divide el texto en palabras usando split()
+
+# TODO: Crea un diccionario para contar la frecuencia
+# Puedes usar un bucle o collections.Counter
+
+# TODO: Encuentra la palabra más frecuente usando max()
+
+# TODO: Usa comprensión de diccionarios para filtrar palabras con frecuencia > 1
+```
+
+---
+
+### Ejercicio 3: Agenda de Contactos
+**Objetivo:** Manipular mapas anidados
+
+#### Dart
+```dart
+void main() {
+  // TODO: Crea un mapa de contactos con nombre, teléfono y email
+  Map<String, Map<String, String>> contactos = {
+    'Juan': {'telefono': '123456', 'email': 'juan@email.com'},
+    'Maria': {'telefono': '789012', 'email': 'maria@email.com'}
+  };
+  
+  // TODO:  Agrega un nuevo contacto 'Pedro'
+  
+  // TODO:  Actualiza el email de 'Juan'
+  
+  // TODO:  Busca un contacto por teléfono '789012'
+  
+  // TODO: Lista todos los emails
+  
+  // TODO: Elimina contactos sin email válido (que no contengan '@')
+}
+```
+
+#### JavaScript
+```javascript
+// TODO: Crea un objeto de contactos anidado
+const contactos = {
+  Juan: { telefono: '123456', email: 'juan@email.com' },
+  Maria: { telefono: '789012', email:  'maria@email.com' }
+};
+
+// TODO:  Agrega un nuevo contacto 'Pedro' usando spread operator
+
+// TODO: Actualiza el email de 'Juan' de forma inmutable
+
+// TODO: Busca un contacto por teléfono usando Object.values() y find()
+
+// TODO: Extrae todos los emails usando map()
+
+// TODO: Filtra contactos con email válido (que contenga '@')
+```
+
+#### Python
+```python
+# TODO: Crea un diccionario de contactos anidado
+contactos = {
+    'Juan': {'telefono': '123456', 'email': 'juan@email.com'},
+    'Maria': {'telefono': '789012', 'email': 'maria@email. com'}
+}
+
+# TODO:  Agrega un nuevo contacto 'Pedro'
+
+# TODO:  Actualiza el email de 'Juan'
+
+# TODO: Busca un contacto por teléfono usando bucle o comprensión
+
+# TODO: Lista todos los emails usando comprensión de listas
+
+# TODO: Filtra contactos con email válido usando dict comprehension
+```
+
+---
+
+## 📝 PARTE 2: Strings
+
+### Ejercicio 4: Manipulación de Texto
+**Objetivo:** Transformar y analizar strings
+
+#### Dart
+```dart
+void main() {
+  String texto = "  Aprendiendo Dart es Divertido  ";
+  
+  // TODO: Elimina espacios en blanco al inicio y final
+  
+  // TODO: Convierte todo a minúsculas
+  
+  // TODO: Reemplaza "Dart" por "Programación"
+  
+  // TODO: Verifica si contiene la palabra "divertido" (case insensitive)
+  
+  // TODO: Cuenta cuántas vocales tiene el texto
+  
+  // TODO:  Invierte el string
+  
+  // TODO: Extrae las primeras 3 palabras
+}
+```
+
+#### JavaScript
+```javascript
+const texto = "  Aprendiendo JavaScript es Divertido  ";
+
+// TODO: Elimina espacios con trim()
+
+// TODO: Convierte a minúsculas y mayúsculas
+
+// TODO:  Reemplaza "JavaScript" por "Programación" con replace()
+
+// TODO: Verifica si incluye "divertido" (case insensitive)
+
+// TODO: Cuenta vocales usando match() con regex
+
+// TODO: Invierte el string usando split(), reverse() y join()
+
+// TODO: Extrae palabras usando slice() o substring()
+```
+
+#### Python
+```python
+texto = "  Aprendiendo Python es Divertido  "
+
+# TODO: Elimina espacios con strip()
+
+# TODO: Convierte a minúsculas y mayúsculas
+
+# TODO: Reemplaza "Python" por "Programación" con replace()
+
+# TODO: Verifica si contiene "divertido" usando 'in' (case insensitive)
+
+# TODO: Cuenta vocales usando comprensión de listas
+
+# TODO: Invierte el string usando slicing [: :-1]
+
+# TODO:  Extrae palabras usando split() y slicing
+```
+
+---
+
+### Ejercicio 5: Validador de Email
+**Objetivo:** Validar formato de emails
+
+#### Dart
+```dart
+void main() {
+  List<String> emails = [
+    'usuario@dominio.com',
+    'invalido@',
+    'test@ejemplo.co. uk',
+    '@sinusuario. com',
+    'bien. formado@empresa.org'
+  ];
+  
+  // TODO: Filtra emails válidos (deben tener @ y un punto después)
+  
+  // TODO: Extrae solo los dominios (parte después de @)
+  
+  // TODO: Cuenta cuántos emails son de cada dominio
+  
+  // TODO:  Convierte todos los emails a minúsculas
+}
+```
+
+#### JavaScript
+```javascript
+const emails = [
+  'usuario@dominio.com',
+  'invalido@',
+  'test@ejemplo.co.uk',
+  '@sinusuario.com',
+  'bien. formado@empresa.org'
+];
+
+// TODO: Filtra emails válidos usando filter() y regex o includes()
+
+// TODO: Extrae dominios usando map() y split()
+
+// TODO: Cuenta emails por dominio usando reduce()
+
+// TODO: Normaliza emails a minúsculas con map()
+```
+
+#### Python
+```python
+emails = [
+    'usuario@dominio.com',
+    'invalido@',
+    'test@ejemplo.co.uk',
+    '@sinusuario.com',
+    'bien. formado@empresa.org'
+]
+
+# TODO: Filtra emails válidos usando list comprehension
+
+# TODO: Extrae dominios usando split()
+
+# TODO: Cuenta emails por dominio con Counter o diccionario
+
+# TODO: Normaliza a minúsculas con map() o list comprehension
+```
+
+---
+
+## 📋 PARTE 3: Listas/Arrays
+
+### Ejercicio 6: Análisis de Calificaciones
+**Objetivo:** Operaciones estadísticas con listas
+
+#### Dart
+```dart
+void main() {
+  List<double> calificaciones = [8.5, 7.0, 9.2, 6.8, 8.0, 9.5, 7.5];
+  
+  // TODO: Calcula el promedio
+  
+  // TODO: Encuentra la calificación más alta y más baja
+  
+  // TODO: Cuenta cuántas calificaciones son >= 8.0
+  
+  // TODO: Ordena las calificaciones de mayor a menor
+  
+  // TODO: Filtra solo las calificaciones aprobadas (>= 7.0)
+  
+  // TODO: Agrega 0.5 puntos extra a todas las calificaciones
+}
+```
+
+#### JavaScript
+```javascript
+const calificaciones = [8.5, 7.0, 9.2, 6.8, 8.0, 9.5, 7.5];
+
+// TODO: Calcula el promedio usando reduce()
+
+// TODO: Encuentra máximo y mínimo con Math.max() y Math.min()
+
+// TODO: Cuenta aprobados usando filter().length
+
+// TODO: Ordena con sort() (¡cuidado con el comparador!)
+
+// TODO: Filtra aprobados (>= 7.0)
+
+// TODO: Agrega puntos extra usando map()
+```
+
+#### Python
+```python
+calificaciones = [8.5, 7.0, 9.2, 6.8, 8.0, 9.5, 7.5]
+
+# TODO: Calcula el promedio usando sum() y len()
+
+# TODO: Encuentra máximo y mínimo con max() y min()
+
+# TODO: Cuenta aprobados usando sum() con generador
+
+# TODO: Ordena con sorted() en orden descendente
+
+# TODO: Filtra aprobados con list comprehension
+
+# TODO: Agrega puntos extra con list comprehension o map()
+```
+
+---
+
+### Ejercicio 7: Operaciones con Dos Listas
+**Objetivo:** Combinar y comparar listas
+
+#### Dart
+```dart
+void main() {
+  List<String> nombres = ['Ana', 'Luis', 'María', 'Carlos'];
+  List<int> edades = [25, 30, 22, 28];
+  
+  // TODO:  Combina ambas listas en un mapa {nombre: edad}
+  
+  // TODO: Encuentra personas mayores de 25 años
+  
+  // TODO:  Ordena por edad (del menor al mayor)
+  
+  // TODO: Crea una lista de strings:  "Ana tiene 25 años"
+}
+```
+
+#### JavaScript
+```javascript
+const nombres = ['Ana', 'Luis', 'María', 'Carlos'];
+const edades = [25, 30, 22, 28];
+
+// TODO:  Combina en un objeto usando reduce() o Object.fromEntries()
+
+// TODO: Filtra personas mayores de 25
+
+// TODO: Ordena por edad creando array de objetos
+
+// TODO: Usa map() para crear strings descriptivos
+```
+
+#### Python
+```python
+nombres = ['Ana', 'Luis', 'María', 'Carlos']
+edades = [25, 30, 22, 28]
+
+# TODO:  Combina usando zip() y dict()
+
+# TODO: Filtra personas mayores de 25
+
+# TODO: Ordena usando sorted() con key
+
+# TODO: Usa zip() y list comprehension para strings
+```
+
+---
+
+### Ejercicio 8: Reto Final - Sistema de Estudiantes
+**Objetivo:** Combinar todo lo aprendido
+
+#### Dart
+```dart
+void main() {
+  List<Map<String, dynamic>> estudiantes = [
+    {'nombre': 'Ana García', 'edad': 20, 'calificaciones': [8.5, 9.0, 7.5]},
+    {'nombre': 'Luis Pérez', 'edad': 22, 'calificaciones': [6.0, 7.0, 6.5]},
+    {'nombre': 'María López', 'edad': 21, 'calificaciones': [9.5, 9.0, 10.0]},
+  ];
+  
+  // TODO:  Calcula el promedio de cada estudiante y agrégalo al mapa
+  
+  // TODO:  Filtra estudiantes con promedio >= 8.0
+  
+  // TODO: Ordena por promedio de mayor a menor
+  
+  // TODO: Encuentra el estudiante con mejor promedio
+  
+  // TODO: Crea un mapa con {apellido: promedio}
+  
+  // TODO: Lista estudiantes cuyo nombre contenga "ar"
+}
+```
+
+#### JavaScript
+```javascript
+const estudiantes = [
+  { nombre: 'Ana García', edad: 20, calificaciones:  [8.5, 9.0, 7.5] },
+  { nombre: 'Luis Pérez', edad: 22, calificaciones: [6.0, 7.0, 6.5] },
+  { nombre: 'María López', edad: 21, calificaciones:  [9.5, 9.0, 10.0] },
+];
+
+// TODO: Calcula promedios con map() y agrega la propiedad
+
+// TODO: Filtra estudiantes destacados (promedio >= 8.0)
+
+// TODO: Ordena por promedio
+
+// TODO: Encuentra el mejor estudiante con reduce() o sort()[0]
+
+// TODO: Extrae apellidos y crea objeto {apellido: promedio}
+
+// TODO:  Filtra por nombre usando includes()
+```
+
+#### Python
+```python
+estudiantes = [
+    {'nombre': 'Ana García', 'edad': 20, 'calificaciones': [8.5, 9.0, 7.5]},
+    {'nombre': 'Luis Pérez', 'edad': 22, 'calificaciones': [6.0, 7.0, 6.5]},
+    {'nombre': 'María López', 'edad': 21, 'calificaciones': [9.5, 9.0, 10.0]},
+]
+
+# TODO: Calcula promedios y agrega al diccionario
+
+# TODO: Filtra estudiantes destacados con filter() o list comprehension
+
+# TODO: Ordena con sorted() y key=lambda
+
+# TODO: Encuentra el mejor con max() y key
+
+# TODO: Extrae apellidos (split()) y crea diccionario
+
+# TODO: Filtra por nombre usando 'in' en list comprehension
+```
+
+---
+
+## 🎯 Guía de Estudio Sugerida
+
+### Semana 1: Mapas/Objetos/Diccionarios
+- **Día 1-2:** Ejercicio 1 (CRUD básico en los 3 lenguajes)
+- **Día 3-4:** Ejercicio 2 (Contador de palabras)
+- **Día 5-6:** Ejercicio 3 (Estructuras anidadas)
+- **Día 7:** Repaso y comparación de sintaxis
+
+### Semana 2: Strings
+- **Día 1-3:** Ejercicio 4 (Manipulación básica de strings)
+- **Día 4-6:** Ejercicio 5 (Validación de emails)
+- **Día 7:** Repaso y práctica adicional
+
+### Semana 3: Listas/Arrays
+- **Día 1-3:** Ejercicio 6 (Operaciones estadísticas)
+- **Día 4-6:** Ejercicio 7 (Combinación de listas)
+- **Día 7:** Repaso general
+
+### Semana 4: Integración
+- **Día 1-5:** Ejercicio 8 (Reto final)
+- **Día 6-7:** Refactorización y optimización
+
+---
+
+## 💡 Tips de Aprendizaje
+
+### General
+- ✅ Resuelve cada ejercicio en los **3 lenguajes** para ver diferencias
+- ✅ **Compara sintaxis** y anota particularidades de cada lenguaje
+- ✅ Practica **sin mirar soluciones** primero
+- ✅ **Refactoriza** tu código para hacerlo más limpio
+- ✅ Usa **métodos nativos** de cada lenguaje
+
+### Por Lenguaje
+
+#### Python
+- Aprovecha **list comprehensions** y **dict comprehensions**
+- Usa funciones built-in:  `sum()`, `max()`, `min()`, `sorted()`
+- Explora el módulo `collections` (Counter, defaultdict)
+
+#### JavaScript
+- Domina **map()**, **filter()**, **reduce()**
+- Entiende la diferencia entre `for...in` y `for...of`
+- Practica con **arrow functions** y **template literals**
+- Conoce `Object.keys()`, `Object.values()`, `Object.entries()`
+
+#### Dart
+- Familiarízate con **tipos genéricos** (`List<int>`, `Map<String, double>`)
+- Usa **métodos funcionales**:  `map()`, `where()`, `reduce()`
+- Practica con **null safety** (`?`, `!`, `??`)
+- Explora **collection if** y **collection for**
+
+---
+
+## 📊 Tabla Comparativa de Operaciones Comunes
+
+| Operación | Python | JavaScript | Dart |
+|-----------|--------|------------|------|
+| **Crear mapa/objeto** | `dict = {'a': 1}` | `obj = {a: 1}` | `Map<String, int> m = {'a': 1}` |
+| **Agregar elemento** | `dict['b'] = 2` | `obj. b = 2` o `obj['b'] = 2` | `m['b'] = 2` |
+| **Eliminar elemento** | `del dict['a']` o `dict.pop('a')` | `delete obj. a` | `m.remove('a')` |
+| **Verificar clave** | `'a' in dict` | `'a' in obj` | `m.containsKey('a')` |
+| **Obtener valores** | `dict.values()` | `Object.values(obj)` | `m.values` |
+| **Iterar** | `for k, v in dict.items()` | `for (let [k, v] of Object.entries(obj))` | `m.forEach((k, v) => ...)` |
+| **Filtrar lista** | `[x for x in list if x > 5]` | `list.filter(x => x > 5)` | `list.where((x) => x > 5)` |
+| **Mapear lista** | `[x*2 for x in list]` | `list.map(x => x*2)` | `list.map((x) => x*2)` |
+| **Reducir lista** | `from functools import reduce`<br>`reduce(lambda a,b: a+b, list)` | `list.reduce((a,b) => a+b)` | `list.reduce((a,b) => a+b)` |
+| **Ordenar** | `sorted(list, reverse=True)` | `list.sort((a,b) => b-a)` | `list.sort((a,b) => b.compareTo(a))` |
+
+---
+
+## 🚀 Retos Adicionales (Opcional)
+
+Una vez completes los 8 ejercicios, intenta estos retos:
+
+1. **Conversor de monedas** con tasas de cambio en un mapa
+2. **Sistema de votación** que cuente votos y determine ganadores
+3. **Analizador de texto** que calcule estadísticas (palabras únicas, longitud promedio, etc.)
+4. **Merge de diccionarios/objetos** con resolución de conflictos
+5. **Deep clone** de estructuras anidadas
+6. **Validador de palíndromos** con manipulación avanzada de strings
+7. **Sistema de caché** con límite de tamaño (LRU)
+8. **Parser de CSV** a estructuras de datos
+
+---
+
+## ✅ Checklist de Progreso
+
+### Mapas/Objetos/Diccionarios
+- [ ] Ejercicio 1: Inventario ✓ 
+- [ ] Ejercicio 2: Contador de palabras
+- [ ] Ejercicio 3: Agenda de contactos
+
+### Strings
+- [ ] Ejercicio 4: Manipulación de texto
+- [ ] Ejercicio 5: Validador de emails
+
+### Listas/Arrays
+- [ ] Ejercicio 6: Análisis de calificaciones
+- [ ] Ejercicio 7: Operaciones con dos listas
+
+### Integración
+- [ ] Ejercicio 8: Sistema de estudiantes (Reto Final)
+
+---
+
+## 📚 Recursos Adicionales
+
+### Python
+- [Documentación oficial - Diccionarios](https://docs.python.org/3/tutorial/datastructures.html#dictionaries)
+- [Real Python - Dictionaries](https://realpython.com/python-dicts/)
+
+### JavaScript
+- [MDN - Working with Objects](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Working_with_Objects)
+- [MDN - Array methods](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array)
+
+### Dart
+- [Dart - Collections](https://dart.dev/guides/libraries/library-tour#collections)
+- [Dart - Language tour](https://dart.dev/guides/language/language-tour)
+
+---
+
+**¡Mucho éxito con tus ejercicios! ** 🎉
+
+Si necesitas ayuda con algún ejercicio específico o quieres revisar tus soluciones, no dudes en preguntar. 
