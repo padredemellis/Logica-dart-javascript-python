@@ -26,5 +26,7 @@ for c, v in frecuencia.items():
     if v > contador:
         contador = v
         mayorOcurrencia = c
-print(f"La palabra que aparece mas veces es '{mayorOcurrencia}' "
-f"y aparece {contador} veces")
+print(
+    f"La palabra que aparece mas veces es '{mayorOcurrencia}' "
+    f"y aparece {contador} veces"
+)
