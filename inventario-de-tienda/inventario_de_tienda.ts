@@ -17,5 +17,5 @@ delete inventario.manzana;
 // TODO:  Imprime todos los productos y sus precios usando Object.entries()
 console.log(Object.entries(inventario));
 // TODO: Calcula el precio total usando Object.values()
-const totalPrice = Object.values(inventario).reduce((a,b) => a + b);
-console.log(totalPrice);
+const totalPrice: number = Object.values(inventario).reduce((a,b) => a + b);
+console.log(totalPrice); 
