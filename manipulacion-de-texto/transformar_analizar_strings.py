@@ -1,32 +1,30 @@
-'''
-texto = "  Aprendiendo Python es Divertido  "
+texto: str = "  Aprendiendo Python es Divertido  "
+
 
 # TODO: Elimina espacios con strip()
+espaciosEliminados: str = texto.strip(" ")
 
 # TODO: Convierte a minúsculas y mayúsculas
-
-# TODO: Reemplaza "Python" por "Programación" con replace()
-
-# TODO: Verifica si contiene "divertido" usando 'in' (case insensitive)
-
-# TODO: Cuenta vocales usando comprensión de listas
-
-# TODO: Invierte el string usando slicing [: :-1]
-
-# TODO:  Extrae palabras usando split() y slicing
-'''
-texto: str = "  Aprendiendo Python es Divertido  "
-espaciosEliminados: str = texto.strip(" ")
 aMinusculas: str = espaciosEliminados.lower()
 aMayusculas: str = aMinusculas.upper()
+
+# TODO: Reemplaza "Python" por "Programación" con replace()
 reemplazar: str = espaciosEliminados.replace("Python", "Programación")
 print(reemplazar)
+
+# TODO: Verifica si contiene "divertido" usando 'in' (case insensitive)
 verificar: bool = "divertido" in reemplazar.lower()
 print(f"Existe??? {verificar}")
+
+# TODO: Cuenta vocales usando comprensión de listas
 invertida: str = espaciosEliminados[:: -1]
-print(invertida)
+
+# TODO: Invierte el string usando slicing [: :-1]
 extraerConSplit: list = espaciosEliminados.split()
 print(extraerConSplit)
+# TODO:  Extrae palabras usando split() y slicing
+
+
 extraerConSlicing: str = espaciosEliminados[0:11]
 print(extraerConSlicing)
 vocales: list = ["a", "e", "i", "o", "u"]
